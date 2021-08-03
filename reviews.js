@@ -15,9 +15,8 @@ fetch('./data.json')
     
     document.querySelector('#productName').innerText = data.products[productID].name;
 
-    function calcStars() {
-
-    }
+    let reviewsNum = 0,
+        starsTotal = 0;
 
     const reviewNode = document.querySelector('#reviewContainer');
     for (let i = 0; i < data.reviews.length; i++) {
@@ -28,6 +27,10 @@ fetch('./data.json')
             let starsNode = put(reviewItemNode, "p.subtitle", "A " + data.reviews[i].star_rating + " star review by " + data.reviews[i].author);
             put(reviewItemNode, "p", );
             put(reviewItemNode, "p", data.reviews[i].body);
+            starsTotal += data.reviews[i].star_rating;
+            reviewsNum++;
         }
     }
+    let avgStars = starsTotal / reviewsNum;
+    document.querySelector('.average-rating').innerText = avgStars;
 });
