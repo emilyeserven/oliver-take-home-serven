@@ -7,10 +7,12 @@
 .btn-primary {
   background-color: #FEE84E;
   border: 1px solid #FEE84E;
-  border-radius: 20px; }
+  border-radius: 20px;
+  color: #262223; }
   .btn-primary:hover {
     background-color: transparent;
     border: 1px solid #262223;
+    color: #262223;
     transition: all 0.15s; }
 
 .review-item {

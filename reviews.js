@@ -12,6 +12,8 @@ fetch('./data.json')
     const urlParams = new URLSearchParams(queryString);
     console.log(urlParams);
     const productID = urlParams.get('id');
+
+    document.querySelector("#writeReviewBtn").href="review-new.html?id=" + productID;
     
     document.querySelector('#productName').innerText = data.products[productID].name;
 
