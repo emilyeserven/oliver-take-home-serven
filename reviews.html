@@ -1,0 +1,47 @@
+<!-- 
+    I will use the product with id 0 since it has 2 reviews.
+
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="data.json"></script>
+    <script src="put.js"></script>
+    <script src="app.js"></script>
+    <script src="reviews.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container mt-4 main-container">
+        <div class="row">
+            <div class="col-12">
+                <h1>Reviews for <span id="productName">?</span></h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 review-subheader d-flex justify-content-between align-items-center">
+                <div>Average Rating: <span class="average-rating">5</span></div>
+                <div><a class="btn btn-primary">Write a Review</a></div>
+            </div>
+        </div>
+        <div class="row mt-4" id="reviewContainer">
+            <!-- Temporary, making it dynamic soon. -->
+            <div class="col-12">
+                <div class="review-item" id="reviewItem0">
+                    <h4>Review Headline</h4>
+                    <p><span class="stars">5</span> Stars</p>
+                    <p>Author</p>
+                    <p>Review Body</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

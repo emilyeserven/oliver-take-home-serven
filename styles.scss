@@ -1,3 +1,43 @@
+$brand-color:       #FEE84E;
+$grey-dark-color:   #262223;
+$grey-mid-color:   #c4c4c4;
+$grey-light-color:  #F8F8F8;
+$white-color:       #FFFFFF;
+
+$transition:    all 0.15s;
+
+$border-radius:     20px;
+
+$max-width:         1200px;
+
+.main-container {
+    max-width:800px;
+}
+
+.btn {
+    padding: 8px 24px;
+}
+
+.btn-primary {
+    background-color: $brand-color;
+    border: 1px solid $brand-color;
+    border-radius: $border-radius;
+    &:hover {
+        background-color: transparent;
+        border: 1px solid $grey-dark-color;
+        transition: $transition;
+    }
+}
+
+.review-item {
+    border-top: $grey-mid-color solid 1px;
+    padding-top: 16px;
+    .subtitle {
+        font-style: italic;
+    }
+}
+
+/* From index.scss */
 .Home {
     text-align: center;
     max-width: 600px;
