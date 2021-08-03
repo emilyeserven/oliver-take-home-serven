@@ -31,6 +31,20 @@ $max-width:         1200px;
     }
 }
 
+.btn-secondary {
+    display:inline-block;
+    background-color: transparent;
+    border: 1px solid $grey-dark-color;
+    border-radius: $border-radius;
+    color: $grey-dark-color;
+    &:hover {
+        background-color: $brand-color;
+        border: 1px solid $brand-color;
+        color: $grey-dark-color;
+        transition: $transition;
+    }
+}
+
 .review-item {
     border-top: $grey-mid-color solid 1px;
     padding-top: 16px;

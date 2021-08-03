@@ -15,6 +15,18 @@
     color: #262223;
     transition: all 0.15s; }
 
+.btn-secondary {
+  display: inline-block;
+  background-color: transparent;
+  border: 1px solid #262223;
+  border-radius: 20px;
+  color: #262223; }
+  .btn-secondary:hover {
+    background-color: #FEE84E;
+    border: 1px solid #FEE84E;
+    color: #262223;
+    transition: all 0.15s; }
+
 .review-item {
   border-top: #c4c4c4 solid 1px;
   padding-top: 16px; }

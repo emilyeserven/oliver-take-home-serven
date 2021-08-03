@@ -14,13 +14,15 @@
     <script src="put.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script src="app.js"></script>
     <script src="reviews.js"></script>
     <link rel="stylesheet" href="styles.css">
     <title>Document</title>
 </head>
 <body>
     <div class="container mt-4 main-container">
+        <div class="row mb-2">
+            <a class="btn btn-link text-start flex-start back-button" href="index.html" style="padding:8px;">Back</a>
+        </div>
         <div class="row">
             <div class="col-12">
                 <h1>Reviews for <span id="productName">?</span></h1>
@@ -33,15 +35,6 @@
             </div>
         </div>
         <div class="row mt-4" id="reviewContainer">
-            <!-- Temporary, making it dynamic soon. -->
-            <div class="col-12">
-                <div class="review-item" id="reviewItem0">
-                    <h4>Review Headline</h4>
-                    <p><span class="stars">5</span> Stars</p>
-                    <p>Author</p>
-                    <p>Review Body</p>
-                </div>
-            </div>
         </div>
     </div>
 </body>

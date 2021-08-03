@@ -22,7 +22,7 @@ fetch('./data.json')
 
     const reviewNode = document.querySelector('#reviewContainer');
     for (let i = 0; i < data.reviews.length; i++) {
-        if (data.reviews[i].productId == 0) {
+        if (data.reviews[i].productId == productID) {
             let reviewItemNode = put(reviewNode, "div.col-12.review-item#reviewItem");
             reviewItemNode.id = "reviewItem" + i;
             put(reviewItemNode, "h4", data.reviews[i].headline);
@@ -32,7 +32,13 @@ fetch('./data.json')
             starsTotal += data.reviews[i].star_rating;
             reviewsNum++;
         }
+        console.log(reviewsNum);
     }
-    let avgStars = starsTotal / reviewsNum;
-    document.querySelector('.average-rating').innerText = avgStars;
+    if (reviewsNum == 0) {
+        put(reviewNode, "h3", "No reviews... yet!");
+        document.querySelector('.average-rating').innerText = "None yet!";
+    } else {
+        let avgStars = starsTotal / reviewsNum;
+        document.querySelector('.average-rating').innerText = avgStars;
+    }
 });
